@@ -1,0 +1,28 @@
+{
+  "botMetadata": [
+    {
+      "marketAddress": "7WdzzSXQqexxgXZy3yY7mb71rFerxEh9x77YhzKxWNgC",
+      "botToken": "",
+      "guildId": "883024219187871825",
+      "preferredChannelId": null,
+      "tokenName": "Pesky Penguins",
+      "tokenSymbol": "svtPSK"
+    },
+    {
+      "marketAddress": "G1QTtjSEoPHfEru7uRaZL8oa1LHYmg4ctmMYw12Xmp9i",
+      "botToken": "",
+      "guildId": "883024219187871825",
+      "preferredChannelId": null,
+      "tokenName": "Solana Monkey Business",
+      "tokenSymbol": "svtSMB"
+    },
+    {
+      "marketAddress": "E8fRXrxSWotPbP7iQatXLmnDj4efp1q7cSZ4zkhYpVS6",
+      "botToken": "",
+      "guildId": "883024219187871825",
+      "preferredChannelId": null,
+      "tokenName": "Degenrate Ape Academy",
+      "tokenSymbol": "svtDAPE"
+    }
+  ]
+}

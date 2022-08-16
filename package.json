@@ -1,0 +1,26 @@
+{
+  "name": "solana-serum-discord-price-bot",
+  "version": "1.0.0",
+  "description": "Auto discord price bot",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "exogenesys",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@project-serum/serum": "^0.13.34",
+    "@solana/web3.js": "^1.10.1",
+    "discord.js": "^12.5.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "nodemon": "^2.0.19"
+  }
+}
