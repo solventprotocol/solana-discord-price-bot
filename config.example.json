@@ -6,7 +6,8 @@
       "guildId": "883024219187871825",
       "preferredChannelId": null,
       "tokenName": "Pesky Penguins",
-      "tokenSymbol": "svtPSK"
+      "tokenSymbol": "svtPSK",
+      "quoteTokenSymbol": "◎"
     },
     {
       "marketAddress": "G1QTtjSEoPHfEru7uRaZL8oa1LHYmg4ctmMYw12Xmp9i",
@@ -14,7 +15,8 @@
       "guildId": "883024219187871825",
       "preferredChannelId": null,
       "tokenName": "Solana Monkey Business",
-      "tokenSymbol": "svtSMB"
+      "tokenSymbol": "svtSMB",
+      "quoteTokenSymbol": "◎"
     },
     {
       "marketAddress": "E8fRXrxSWotPbP7iQatXLmnDj4efp1q7cSZ4zkhYpVS6",
@@ -22,7 +24,8 @@
       "guildId": "883024219187871825",
       "preferredChannelId": null,
       "tokenName": "Degenrate Ape Academy",
-      "tokenSymbol": "svtDAPE"
+      "tokenSymbol": "svtDAPE",
+      "quoteTokenSymbol": "◎"
     }
   ]
 }

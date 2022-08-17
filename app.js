@@ -146,10 +146,9 @@ const updateBotUsername = async (connection, bot) => {
   try {
     // Update bot name with price
     const datetime = new Date();
-    const newName = `${bot.metadata.tokenSymbol} ◎${await getCurrentPrice(
-      connection,
-      bot.metadata.marketAddress
-    )}`;
+    const newName = `${bot.metadata.tokenSymbol} (${
+      bot.metadata.quoteTokenSymbol
+    }${await getCurrentPrice(connection, bot.metadata.marketAddress)})`;
 
     bot.client.user.setUsername(newName);
     console.log(`update on: ${datetime}`);
@@ -158,14 +157,15 @@ const updateBotUsername = async (connection, bot) => {
   }
 };
 
-const setBotPresence = (bot) => {
+const setBotPresence = async (bot) => {
   try {
-    bot.client.user.setPresence(
-      { game: { name: ".help" } },
-      {
-        status: "online",
-      }
-    );
+    bot.client.user.setPresence({
+      status: "online",
+      activity: {
+        name: bot.metadata.tokenName,
+        type: "WATCHING",
+      },
+    });
     console.log(`setting presence on: ${new Date()}`);
   } catch (error) {
     console.log(error);
@@ -179,8 +179,6 @@ const main = async () => {
 
     discordInterface.forEach((bot) => {
       setUpBot(connection, bot);
-      updateBotUsername(connection, bot);
-      setBotPresence(bot);
       setInterval(() => setBotPresence(bot), 5 * 1000);
       setInterval(() => updateBotUsername(connection, bot), 5 * 60 * 1000);
     });
